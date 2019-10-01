@@ -43,7 +43,7 @@
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
     path: 'search.xml',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
@@ -55,18 +55,18 @@
   };
 </script>
 
-  <meta name="description" content="做一件有意义的事儿。。。">
+  <meta name="description" content="Mac 平台操作安装 Git 之后可直接在 Terminal 操作 注册 GitHub访问：http://www.GitHub.com/ 注册你的 username 和邮箱，邮箱十分重要，GitHub 上很多通知都是通过邮箱发送。 注册过程比较简单，详细也可以看： 一步步在 GitHub上创建博客主页 全系列 by pchou（推荐）">
 <meta name="keywords" content="Objective-C">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo搭建技术博客之学习记录">
 <meta property="og:url" content="https://LimMem.github.io/2019/09/30/Hexo搭建技术博客之学习记录/index.html">
 <meta property="og:site_name" content="人脑有限">
-<meta property="og:description" content="做一件有意义的事儿。。。">
+<meta property="og:description" content="Mac 平台操作安装 Git 之后可直接在 Terminal 操作 注册 GitHub访问：http://www.GitHub.com/ 注册你的 username 和邮箱，邮箱十分重要，GitHub 上很多通知都是通过邮箱发送。 注册过程比较简单，详细也可以看： 一步步在 GitHub上创建博客主页 全系列 by pchou（推荐）">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-30T15:40:34.768Z">
+<meta property="og:updated_time" content="2019-10-01T04:52:01.094Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo搭建技术博客之学习记录">
-<meta name="twitter:description" content="做一件有意义的事儿。。。">
+<meta name="twitter:description" content="Mac 平台操作安装 Git 之后可直接在 Terminal 操作 注册 GitHub访问：http://www.GitHub.com/ 注册你的 username 和邮箱，邮箱十分重要，GitHub 上很多通知都是通过邮箱发送。 注册过程比较简单，详细也可以看： 一步步在 GitHub上创建博客主页 全系列 by pchou（推荐）">
   <link rel="canonical" href="https://LimMem.github.io/2019/09/30/Hexo搭建技术博客之学习记录/">
 
 
@@ -182,9 +182,36 @@
     <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger">
+        
+          <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+      </li>
+    
   </ul>
 
 </nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
 </div>
     </header>
 
@@ -240,6 +267,18 @@
               <time title="创建时间：2019-09-30 23:40:34" itemprop="dateCreated datePublished" datetime="2019-09-30T23:40:34+08:00">2019-09-30</time>
             </span>
           
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-10-01 12:52:01" itemprop="dateModified" datetime="2019-10-01T12:52:01+08:00">2019-10-01</time>
+              </span>
+            
+          
 
           
 
@@ -252,7 +291,21 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        
+        <p>Mac 平台操作<br>安装 Git 之后可直接在 Terminal 操作</p>
+<p>注册 GitHub<br>访问：<a href="http://www.GitHub.com/" target="_blank" rel="noopener">http://www.GitHub.com/</a></p>
+<p>注册你的 username 和邮箱，邮箱十分重要，GitHub 上很多通知都是通过邮箱发送。</p>
+<p>注册过程比较简单，详细也可以看：</p>
+<p>一步步在 GitHub上创建博客主页 全系列 by pchou（推荐）</p>
+<a id="more"></a>
+<p>配置和使用 GitHub<br>以下教程主要参考 beiyuu 的《使用GitHub Pages建独立博客》写成。</p>
+<p>配置 SSH keys<br>我们如何让本地 git 项目与远程的 GitHub 建立联系呢？用 SSH keys。</p>
+<p>检查 SSH keys的设置<br>首先我们需要检查你电脑上现有的 ssh key：</p>
+<p>$ cd ~/.ssh 检查本机的ssh密钥<br>如果提示：No such file or directory 说明你是第一次使用 git。</p>
+<p>生成新的 SSH Key：<br>$ ssh-keygen -t rsa -C “邮件地址@youremail.com”<br>Generating public/private rsa key pair.<br>Enter file in which to save the key (/Users/your_user_directory/.ssh/id_rsa):&lt;回车就好&gt;<br>注意 1: 此处的邮箱地址，你可以输入自己的邮箱地址；<br>注意2: 此处的「-C」的是大写的「C」<br>然后系统会要你输入密码：</p>
+<p>Enter passphrase (empty for no passphrase):&lt;输入加密串&gt;<br>Enter same passphrase again:&lt;再次输入加密串&gt;<br>在回车中会提示你输入一个密码，这个密码会在你提交项目时使用，如果为空的话提交项目时则不用输入。这个设置是防止别人往你的项目里提交内容。</p>
+<p>注意：输入密码的时候没有 * 字样的，你直接输入就可以了。</p>
+<p>最后看到这样的界面，就成功设置ssh key了：</p>
+
     </div>
 
     
@@ -392,6 +445,8 @@
 
 
 
+
+  <script src="/js/local-search.js?v=7.4.0"></script>
 
 
 

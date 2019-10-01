@@ -180,22 +180,22 @@ h6 {
   padding: 0;
 }
 h1 {
-  font-size: 6.875em;
+  font-size: 4.875em;
 }
 h2 {
-  font-size: 6.75em;
+  font-size: 4.75em;
 }
 h3 {
-  font-size: 6.625em;
+  font-size: 4.625em;
 }
 h4 {
-  font-size: 6.5em;
+  font-size: 4.5em;
 }
 h5 {
-  font-size: 6.375em;
+  font-size: 4.375em;
 }
 h6 {
-  font-size: 6.25em;
+  font-size: 4.25em;
 }
 p {
   margin: 0 0 20px 0;
@@ -919,7 +919,7 @@ pre .javascript .function {
   border-bottom: none;
   color: #fff;
   display: inline-block;
-  line-height: 9em;
+  line-height: 7em;
   padding: 0 40px;
   position: relative;
 }
@@ -935,7 +935,7 @@ pre .javascript .function {
 .site-title {
   display: inline-block;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 9em;
+  font-size: 7em;
   font-weight: normal;
   line-height: 1.5;
   vertical-align: top;
@@ -1111,7 +1111,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #93e9ff;
+  background: #fff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;

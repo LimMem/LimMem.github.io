@@ -919,7 +919,7 @@ pre .javascript .function {
   border-bottom: none;
   color: #fff;
   display: inline-block;
-  line-height: 7em;
+  line-height: 6em;
   padding: 0 40px;
   position: relative;
 }
@@ -935,7 +935,7 @@ pre .javascript .function {
 .site-title {
   display: inline-block;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 7em;
+  font-size: 6em;
   font-weight: normal;
   line-height: 1.5;
   vertical-align: top;
@@ -1111,7 +1111,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #e5c918;
+  background: #ffe253;
   border-radius: 50%;
   content: ' ';
   display: inline-block;

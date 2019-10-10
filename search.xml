@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[UML类图笔记]]></title>
+    <url>%2F2019%2F10%2F10%2FUML%E7%B1%BB%E5%9B%BE%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>软件设计图</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[Markdown语法之笔记记录]]></title>
     <url>%2F2019%2F10%2F02%2FMarkdown%E8%AF%AD%E6%B3%95%2F</url>
     <content type="text"><![CDATA[一、Markdown定义 Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。 二、Markdown语法1、标题 语法 效果 2、字体样式 语法 效果 *斜体* 斜体 **加粗** 加粗 ***斜体加粗*** 斜体加粗 3、列表 无序列表 语法 效果 - 苹果- 橘子 - 香蕉 ·苹果·橘子·香蕉 有序列表 语法 效果 1. 苹果2. 橘子 3. 香蕉 1. 苹果2. 橘子3. 香蕉 4、图片语法 ![图片名](链接url) 语法 效果 ![笨记忆](/images/avatar.png) 5、 超链接语法 [链接名](链接url) 语法 效果 [笨记忆的技术博客](https://limmem.github.io/) 笨记忆 6、 代码块语法 &lt;!–￼0–&gt; 语法 效果 7、 引用语法 &gt; 语法 效果 &gt; Markdown是一种可以使用普通文本编辑器编写的标记语言 8、 特殊标记语法 `特殊标记` 语法 效果 我是需要`特殊标记`的文字 我是需要特殊标记的文字 9、 表格语法 水果 | 蔬菜 | 零食 —- | —- | —- 苹果 | 上海青 | 方便面 香蕉 | 胡萝卜 | 瓜子 语法 效果 10、 分割线语法 -– 语法 效果 11、上下行语法 log&lt;sub&gt;2&lt;/sub&gt;10 语法 效果 log&lt;sub&gt;2&lt;/sub&gt;10 log210 10&lt;sup&gt;2&lt;/sup&gt; * 5&lt;sup&gt;3&lt;/sup&gt; 102 * 53 12、 删除线语法 ~这是一段错误的文本 语法 效果 ~这是一段错误的文本 这是一段错误的文本]]></content>

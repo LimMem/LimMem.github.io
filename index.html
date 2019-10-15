@@ -362,7 +362,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-15 10:05:51" itemprop="dateModified" datetime="2019-10-15T10:05:51+08:00">2019-10-15</time>
+                <time title="修改时间：2019-10-15 10:08:01" itemprop="dateModified" datetime="2019-10-15T10:08:01+08:00">2019-10-15</time>
               </span>
             
           
@@ -393,72 +393,20 @@
       
           <p>一、对象和消息</p>
 <ul>
-<li><p>实例变量的生成和初始化</p>
-<blockquote>
+<li>实例变量的生成和初始化<blockquote>
 <p>1、OC初始化一个对象一般使用 <code>[类名 alloc] init]</code> 来初始化。其中，<code>alloc</code>只是对所需要的对象进行储存空间的分配，但是并没有对象初始化，初始化需要调用<code>init</code>方法。<br>2、<code>init</code>并不意味着对象重置，如果需要<code>reset</code>就必须自己实现<code>重置函数</code>。</p>
 </blockquote>
 </li>
-<li><p>类的声明</p>
-</li>
 </ul>
-<blockquote>
-<p>1、 接口</p>
-</blockquote>
-<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">@interface</span> 类名: 父类名</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 属性定义</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 方法声明</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
-
-<p><code>Objective-C</code>中的编译命令都是用<code>@</code>字符开头。</p>
-<p><code>NSObject</code>类是<code>OC</code>的根类。</p>
-<ul>
-<li>方法<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">// 无返回值无参数</span></span><br><span class="line">- (<span class="keyword">void</span>)setLocalStorage;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 有返回值无参数</span></span><br><span class="line">- (<span class="built_in">NSString</span> *)getUserName;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 无返回值有参数</span></span><br><span class="line">- (<span class="keyword">void</span>)setUserName:(<span class="built_in">NSString</span> *)userName;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 有参数有返回值</span></span><br><span class="line">- (instance)initWithUserName:(<span class="built_in">NSString</span> *)userName;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 有多个参数有返回值</span></span><br><span class="line">- (instance)initWithUserName:(<span class="built_in">NSString</span> *)userName age:(<span class="built_in">NSInteger</span>)age;</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<p>小结：<br>  在<code>OC</code>中声明方法，当参数或者返回值是id时，可以省略不写。例如：<code>- initWithObject: object;</code>和<code>- (id) initWithObject: (id)object;</code> 也是可以通过编译和运行的。但是这种写法不推荐使用。</p>
-<ul>
-<li>编译</li>
-</ul>
-<p>1、在<code>Cocoa</code>环境中，系统提供的类和函数被封装在框架<code>(framework)</code>中。并以动态库的形式被提供给应用程序调用。<br>2、编译一个.m(<code>m是模块的意思</code>)文件，可以使用xcode，也可以使用命令行<code>clang 文件名.m -framewrok Foundation</code> 。 其中<code>Foundation</code>可以改成你需要使用的框架， 然后会生成一个<code>xxx.out</code>的可执行文件。可以在命令号直接输入<code>./xxx.out</code>就可以打印出相应的结果。  可追加-Wmost或者-Wall显示警告信息</p>
-<ul>
-<li><p>动态绑定</p>
-<blockquote>
-<p>定义: 程序在执行时才能确定对象的属性和需要响应的消息。</p>
-</blockquote>
-</li>
-<li><p>多态</p>
-<blockquote>
-<p>定义： 同一操作作用于不同的类的实例时，将产生不同的执行效果。</p>
-<ol>
-<li>有继承才存在多态。</li>
-<li>多态是面向对象语言一个方法，参数传递用父类的类型，子类重写父类的方法，方法中调用子类方法的实现，当增加一个子类时，无需添加其他形式。具体可以查看下面的例子：</li>
-</ol>
-</blockquote>
-</li>
-</ul>
-<p>类<code>A</code>具备<code>run</code>方法</p>
-<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">A</span> : <span class="title">NSObject</span></span></span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)run;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@implementation</span></span></span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)run &#123;</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@"Animation is runing"</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
-
-<p>类 <code>B</code>集成于类<code>A</code>, 并重写<code>run</code>方法，</p>
-<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">B</span> : <span class="title">A</span></span></span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)run;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@implementation</span></span></span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)run &#123;</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@"B is runing"</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
-
-<p>类 <code>C</code>集成于类<code>A</code>, 并重写<code>run</code>方法，</p>
-<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">C</span> : <span class="title">A</span></span></span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)run;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@implementation</span></span></span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)run &#123;</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@"C is runing"</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
-
-<p><code>多态</code>的使用</p>
-<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#import <span class="meta-string">"A.h"</span></span></span><br><span class="line"><span class="meta">#import <span class="meta-string">"B.h"</span></span></span><br><span class="line"><span class="meta">#import <span class="meta-string">"C.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">N</span> : <span class="title">NSObject</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@implementation</span></span></span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)runningWithAnimation:(A *)animation &#123;</span><br><span class="line">    [A run];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)init &#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">self</span> = [<span class="keyword">super</span> init]) &#123;</span><br><span class="line">        [<span class="keyword">self</span> runningWithAnimation:[B new]]; <span class="comment">// 输出 B is runing</span></span><br><span class="line">        [<span class="keyword">self</span> runningWithAnimation:[C new]]; <span class="comment">// 输出 C is </span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">self</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>在实际的项目中，需求方可能会提出动物<code>D</code>也需要具备<code>run</code>的能力，这个时候 我们只需要增加一个<code>D</code>的类，并重写<code>run</code>的方法即可。如下：</p>
-</blockquote>
-<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">D</span> : <span class="title">A</span></span></span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)run;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@implementation</span></span></span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)run &#123;</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@"D is runing"</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
-
-<h6 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h6><blockquote>
-<ol>
-<li>继承可以把父类的所有功能都直接拿过来，这样就不必重零做起，子类只需要新增自己特有的方法，也可以把父类不适合的方法覆盖重写；</li>
-<li>有了继承，才能有多态。在调用类实例方法的时候，尽量把变量视作父类类型，这样，所有子类类型都可以正常被接收；</li>
-<li>多态是面向对象的一个重要特征，大大增加了软件的灵活性和扩展性。</li>
-</ol>
-</blockquote>
-
+          <!--noindex-->
+          
+            <div class="post-button">
+              <a class="btn" href="/2019/10/14/《Objective-C编程全解》之读书笔记/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
